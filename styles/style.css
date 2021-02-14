@@ -1,5 +1,8 @@
 @import 'fonts.css';
 @import 'custom-checkbox.css';
+:root {
+  --gold-color: #E3B873;
+}
 html {
   font-size: 13px;
   box-sizing: border-box;
@@ -24,7 +27,7 @@ body {
   width: 817px;
 }
 .button {
-  background: #E3B873;
+  background: var(--gold-color);
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
   border: 1px solid transparent;
   border-radius: 2px;
@@ -73,10 +76,11 @@ form {
 .subtitle {
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
+  font-weight: normal;
 }
 .projects-title {
   margin: 0;
-  color: #E3B873;
+  color: var(--gold-color);
   font-size: 27px;
   line-height: 37px;
   letter-spacing: -0.07em;
@@ -100,7 +104,7 @@ form {
   display: block;
   height: 1.5px;
   width: 32px;
-  background: #E3B873;
+  background: var(--gold-color);
   border-radius: 30px;
   position: absolute;
   top: 50%;
@@ -118,7 +122,7 @@ form {
 }
 .logo {
   margin-right: 95px;
-  color: #E3B873;
+  color: var(--gold-color);
 }
 /* ======================== navigation ========================*/
 .header-nav,
@@ -145,10 +149,10 @@ form {
 }
 .header-nav-item a:hover,
 .projects-nav-item a:hover {
-  color: #E3B873;
+  color: var(--gold-color);
 }
 .header-nav-item:last-child a {
-  color: #E3B873;
+  color: var(--gold-color);
 }
 /* ======================== .hero ========================*/
 .hero {
@@ -180,7 +184,7 @@ form {
   width: 1256px;
 }
 .hero-title span {
-  color: #E3B873;
+  color: var(--gold-color);
 }
 .hero-text {
   width: 504px;
@@ -231,7 +235,7 @@ button:nth-of-type(2) {
 .projects-about-title {
   font-size: 18px;
   line-height: 25px;
-  color: #E3B873;
+  color: var(--gold-color);
 }
 .projects-about-text {
   margin-top: 9px;
@@ -291,7 +295,7 @@ button:nth-of-type(2) {
 }
 .projects-nav-item a:hover {
   padding-bottom: 6px;  
-  border-bottom: 1px solid #E3B873;
+  border-bottom: 1px solid var(--gold-color);
 }
 
 /* ======================== online control ========================*/
@@ -326,7 +330,7 @@ button:nth-of-type(2) {
   display: block;
   width: 55px;
   height: 1.5px;
-  background: #E3B873;
+  background: var(--gold-color);
   border-radius: 30px;
   position: absolute;
   bottom: -62px;
@@ -523,15 +527,87 @@ input {
 .service-sale p {
   font-size: 18px;
   line-height: 26px;
-  color: #E3B873;  
+  color: var(--gold-color);  
   text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
   margin-top: 22px;
   margin-bottom: 0;
 }
 
+/* ======================== Fantasy ========================*/
+.fantasy {
+  padding-top: 127px;
+  padding-bottom: 87px;
+  margin-top: 300px;
+  background-image: url('../img/fantasy/fantasy-bg.jpg');
+  background-size: cover;
+  position: relative;
+}
+.fantasy::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, .8  );
+}
+.fantasy-container {
+  position: relative;
+  z-index: 1;
+}
+.fantasy-text {
+  width: 300px;
+}
+.fantasy-text > ul {
+  padding: 0;
+  margin-top: 47px;
+  margin-bottom: 0;
+  list-style: none;
+}
+.fantasy-text li{
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  color: #fff;
+
+}
+.fantasy-text li:last-child {
+  margin-bottom: 0;
+}
+.fantasy-text span {
+  border-bottom: 1px solid transparent;
+  transition: border .3s ease,
+              color .3s ease;
+
+}
+.fantasy-text span:hover {
+  cursor: pointer;
+  color: var(--gold-color);
+  border-bottom-color: var(--gold-color);
+}
+.fantasy-gallery {
+  display: flex;
+}
+.fantasy-col {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: -180px;
+  left: 500px;
+}
+.fantasy-col:last-child {
+  margin-left: 43px;
+  top: -250px;
+  left: 850px;
+}
+.fantasy-col img:first-child {
+  margin-bottom: 39px;
+}
+
 /* ======================== clients ========================*/
 .clients {
-  margin-top: 180px;
+  margin-top: 110px;
   height: 1200px;
   background: url("../img/clients/clients-bg.jpg");
   background-repeat: repeat-x;
@@ -585,7 +661,7 @@ input {
   height: 54px;
   width: 293px;
   margin-top: 110px;
-  background: #E3B873;
+  background: var(--gold-color);
   box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
 }
 
@@ -607,3 +683,4 @@ input {
   vertical-align: middle;
   margin-right: 15px;
 }
+
