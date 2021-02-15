@@ -162,7 +162,8 @@ input {
 .icon-wrapper::after {
   right: -42px;
 }
-.header {
+.header,
+.footer {
   height: 83px;
   background-color: #000;
   display: flex;
@@ -693,6 +694,8 @@ button:nth-of-type(2) {
   background: #000;
   margin: 0 auto;
   margin-top: 300px;
+  position: relative;
+  z-index: 2;
 }
 .clients-form {
   width: 520px;
@@ -739,4 +742,42 @@ button:nth-of-type(2) {
 }  
 .clients-form-row:nth-of-type(4) {
   margin-bottom: 34px;
+}
+
+/* contacts */
+.contacts {
+  height: 954px;
+  background-image: url('../img/contacts/contacts-bg.jpg');
+  background-size: cover;
+  position: relative;
+}
+.contacts::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 1  ), rgba(0, 0, 0, .8 ));
+  /* background: rgba(0, 0, 0, .7); */
+}
+.contacts-container {
+  position: relative;
+  z-index: 1;
+}
+.contacts-text {
+  margin: 0 auto;
+  margin-top: 274px;
+  width: 590px;
+  text-align: center;
+}
+.contacts-social {
+  font-size: 0;
+  display: flex;
+  margin-top: 26px;
+  margin-bottom: 43px;
+}
+.contacts-social a:first-child img{
+  margin-right: 15px;
 }
