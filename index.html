@@ -151,17 +151,17 @@
         </p>
         <form class="online-form">
           <div class="form-control">
-            <label for="name">Name</label>
-            <input type="text" id="name" placeholder="What is your name:">
+            <label for="online-name">Name</label>
+            <input type="text" id="online-name" placeholder="What is your name:">
           </div>
           <div class="form-control">
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" placeholder="Your phone number:">
+            <label for="online-phone">Phone</label>
+            <input type="tel" id="online-phone" placeholder="Your phone number:">
           </div>
           <div class="form-control">
             <button class="button button--form" type="submit">Submit</button>
           </div>
-          <div class="form-control">
+          <div class="form-control--checkboxl form-control--checkbox">
             <input class="custom-checkbox" type="checkbox" id="agree" name="personal-data" value="I agree">
             <label for="agree">I agree to the processing of personal data</label>
           </div>
@@ -250,16 +250,16 @@
             <form class="service-form">
               <h4 class="form__title">Leave a request for free <br>departure of the measurer</h4>
               <div class="form-control form-control--service">
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="What is your name:">
+                <label for="service-name">Name</label>
+                <input type="text" id="service-name" placeholder="What is your name:">
               </div>
               <div class="form-control form-control--service">
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" placeholder="Your phone number:">
+                <label for="service-phone">Phone</label>
+                <input type="tel" id="service-phone" placeholder="Your phone number:">
               </div>
               <div class="form-control form-control--service">
-                <label for="email">Email</label>
-                <input type="tel" id="phone" placeholder="Your Email:">
+                <label for="service-email">Email</label>
+                <input type="tel" id="service-email" placeholder="Your Email:">
               </div>
               <div class="form-control form-control--service">
                 <input class="custom-checkbox" type="checkbox" id="personal-data" name="personal-data" value="I agree">
@@ -405,10 +405,51 @@
               </div>
             </div>
           </div>
+        </div> 
 
 
-      </div> <!--./clients-->
-    </section>
+      </div> <!--./container-->
+
+      <div class="clients-request">
+        <form class="clients-form">
+          <h4 class="form__title">Have any questions?</h4>
+
+          <div class="clients-form-row">
+            <div class="form-control form-control--clients">
+              <label for="clients-name">Name</label>
+              <input type="text" id="clients-name" placeholder="What is your name:">
+            </div>
+            <div class="form-control form-control--clients">
+              <label for="clients-phone">Phone</label>
+              <input type="tel" id="clients-phone" placeholder="Your phone number:">
+            </div>
+          </div>
+
+
+
+          <div class="clients-form-row">
+            <div class="form-control form-control--clients">
+              <label for="question">Question</label>
+              <input type="text" id="question" placeholder="I want to know:">
+            </div>
+          </div>
+          
+
+          <div class="clients-form-row">
+            <div class="form-control form-control--clients">
+              <input class="custom-checkbox" type="checkbox" id="personal-data-clients" name="personal-data-clients" value="I agree">
+              <label for="personal-data-clients">I agree to the processing of personal data</label>
+            </div>
+          </div>
+
+          <div class="clients-form-row">
+            <div class="form-control form-control--clients">
+              <button class="button button--form" type="submit">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section><!--./clients-->
 <!-- измениить название класса .wrapper!!!!!!!!!! -->
 
 

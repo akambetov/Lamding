@@ -59,6 +59,8 @@ body {
   font-size: 18px;
   line-height: 25px;
 }
+
+/* FORM */
 form {
   display: flex;
   flex-wrap: wrap;
@@ -70,13 +72,58 @@ form {
 .form-control {
   display: flex;
   flex-direction: column;
+}.form-control label {
+  line-height: 21px;
+  color: rgba(54, 54, 54, .5);
 }
+input {
+  font-size: 14px;
+  line-height: 23px;
+  outline: none;
+}
+.form-control input {
+  margin-right: 58px;
+  width: 231px;
+  border: none;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+}
+.form-control input::placeholder {
+  color: rgba(54, 54, 54, 1);
+}
+.form-control--checkbox {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.form-control--checkbox input  {
+  margin: 0;
+  width: 18px;
+  height: 18px;
+}
+.form-control--checkbox label {
+  font-size: 14px;
+  line-height: 27px;
+  color: #181818;
+}
+.form-control--checkbox input,
+.form-control--checkbox label {
+  margin-right: 8px;
+  margin-top: 33px;
+}
+
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .title,
 .subtitle {
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
   font-weight: normal;
+}
+.form__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  margin: 28px auto 39px;
+  text-align: center;
+  color: #fff;
 }
 .projects-title {
   margin: 0;
@@ -347,43 +394,7 @@ button:nth-of-type(2) {
 .online-form {
   justify-content: space-around;
 }
-.form-control label {
-  line-height: 21px;
-  color: rgba(54, 54, 54, .5);
-}
-input {
-  font-size: 14px;
-  line-height: 23px;
-  outline: none;
-}
-.form-control input {
-  margin-right: 58px;
-  width: 231px;
-  border: none;
-  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
-}
-.form-control input::placeholder {
-  color: rgba(54, 54, 54, 1);
-}
-.form-control:last-child {
-  flex-direction: row;
-  justify-content: flex-start;
-}
-.form-control:last-child input  {
-  margin: 0;
-  width: 18px;
-  height: 18px;
-}
-.form-control:last-child label {
-  font-size: 14px;
-  line-height: 27px;
-  color: #181818;
-}
-.form-control:last-child input,
-.form-control:last-child label {
-  margin-right: 8px;
-  margin-top: 33px;
-}
+
 
 /* ======================== repair ========================*/
 .repair {
@@ -478,14 +489,6 @@ input {
   background: #131313;
   box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
 }
-.form__title {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 400;
-  margin: 28px auto 39px;
-  text-align: center;
-  color: #fff;
-}
 .form-control--service:last-child {
   margin-bottom: 0;
 }
@@ -499,6 +502,7 @@ input {
   margin-right: 0;
   background: #131313;
   width: 408px;
+  color: #fff;
 }
 .form-control--service input::placeholder {
   color: #fff;
@@ -684,3 +688,55 @@ input {
   margin-right: 15px;
 }
 
+.clients-request {
+  width: 883px;
+  background: #000;
+  margin: 0 auto;
+  margin-top: 300px;
+}
+.clients-form {
+  width: 520px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.clients-form .form__title {
+  font-family: 'Yeseva One', cursive;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-top: 34px;
+  margin-bottom: 0;
+}
+.clients-form-row {
+  display: flex;
+  align-items: space-between;
+  margin-top: 48px;
+}
+.form-control--clients input {
+  background: #000; 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+.form-control--clients input::placeholder {
+  color: #fff;
+}
+.form-control--clients label {
+  font-size: 13px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.5)
+}
+.clients-form-row:nth-of-type(2) .form-control--clients {
+  width: 520px;
+}
+.clients-form-row:nth-of-type(2) input {
+  width: 100%;
+}
+.clients-form-row:nth-of-type(3), 
+.clients-form-row:nth-of-type(4) {
+  margin: 48px auto 0;
+}  
+.clients-form-row:nth-of-type(4) {
+  margin-bottom: 34px;
+}
