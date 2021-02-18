@@ -191,7 +191,7 @@ input {
 .projects-nav-item a {
   text-transform: uppercase;
   text-decoration: none;
-  font-family: 'Yeseva One', cursive;
+  /* font-family: 'Yeseva One', cursive; */
   line-height: 15px;
   color: #fff;
   transition: color .3s ease;
